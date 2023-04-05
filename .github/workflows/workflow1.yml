@@ -19,7 +19,7 @@ jobs:
       - name: Lint step
         run: |
           echo "Start Lint step"
-          npm lint
+          npm run lint
   
   test:
     needs: lint
@@ -40,7 +40,7 @@ jobs:
       - name: Test step
         run: |
           echo "Start test"
-          npm test
+          npm run test
 
   deploy:
     needs: test
@@ -61,4 +61,4 @@ jobs:
       - name: Build step
         run: |
           echo "Start build"
-          npm build
+          npm run build
