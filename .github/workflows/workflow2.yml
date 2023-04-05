@@ -1,0 +1,9 @@
+name: Get context
+#on: issues
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output github context
+        run: echo "${{ toJSON(github.issues) }}"
