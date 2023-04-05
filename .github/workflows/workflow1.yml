@@ -19,6 +19,7 @@ jobs:
       - name: Lint step
         run: |
           echo "Start Lint step"
+          npm init @eslint/config
           npm run lint
   
   test:
